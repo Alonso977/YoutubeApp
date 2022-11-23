@@ -15,7 +15,7 @@ struct PlayList: Decodable {
     
     struct Items: Decodable {
         let kind, etag, id: String
-        let snipet: Snipet
+        let snippet: Snipet
         let contentDetails: ContentDetails
 
         struct Snipet: Decodable {

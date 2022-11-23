@@ -36,42 +36,39 @@ struct VideoModel: Decodable {
             case statistics
         }
         
-//        init(from decoder: Decoder) throws {
-//            let container = try decoder.container(keyedBy: CodingKeys.self)
-//
-//            self.kind = try container.decode(String.self, forKey: .kind)
-//
-//            if let id = try? container.decode(VideoId.self, forKey: .id){
-//                self.id = id.videoId
-//            }else{
-//                if let id = try? container.decode(String.self, forKey: .id){
-//                    self.id = id
-//                }else{
-//                    self.id = nil
-//                }
-//            }
-//
-//            if let snippet = try? container.decode(Snippet.self, forKey: .snippet){
-//                self.snippet = snippet
-//            }else{
-//                self.snippet = nil
-//            }
-//
-//            if let contentDetails = try? container.decode(ContentDetails.self, forKey: .contentDetails){
-//                self.contentDetails = contentDetails
-//            }else{
-//                self.contentDetails = nil
-//            }
-//
-//            if let statistics = try? container.decode(Statistics.self, forKey: .statistics){
-//                self.statistics = statistics
-//            }else{
-//                self.statistics = nil
-//            }
-//
-//
-//
-//        }
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+
+            self.kind = try container.decode(String.self, forKey: .kind)
+
+            if let id = try? container.decode(VideoId.self, forKey: .id){
+                self.id = id.videoId
+            }else{
+                if let id = try? container.decode(String.self, forKey: .id){
+                    self.id = id
+                }else{
+                    self.id = nil
+                }
+            }
+
+            if let snippet = try? container.decode(Snippet.self, forKey: .snippet){
+                self.snippet = snippet
+            }else{
+                self.snippet = nil
+            }
+
+            if let contentDetails = try? container.decode(ContentDetails.self, forKey: .contentDetails){
+                self.contentDetails = contentDetails
+            }else{
+                self.contentDetails = nil
+            }
+
+            if let statistics = try? container.decode(Statistics.self, forKey: .statistics){
+                self.statistics = statistics
+            }else{
+                self.statistics = nil
+            }
+        }
         
         
         
