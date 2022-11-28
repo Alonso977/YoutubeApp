@@ -22,8 +22,8 @@ class HomeProviderMock: HomeProviderProtocol {
         return model
     }
     
-    func getPlaylists(channelId: String) async throws -> PlayList {
-        guard let model = Utils.parseJson(jsonName: "Playlists", model: PlayList.self) else {
+    func getPlaylists(channelId: String) async throws -> PlayListModel {
+        guard let model = Utils.parseJson(jsonName: "Playlists", model: PlayListModel.self) else {
             throw NetworkError.jsonDecoder
         }
         return model

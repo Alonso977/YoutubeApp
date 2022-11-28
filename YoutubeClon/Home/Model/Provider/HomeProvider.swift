@@ -10,13 +10,13 @@ import Foundation
 protocol HomeProviderProtocol {
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel
     func getChannel(channelId: String) async throws -> ChannelModel
-    func getPlaylists(channelId: String) async throws -> PlayList
+    func getPlaylists(channelId: String) async throws -> PlayListModel
     func getPlaylistItems(playlistId: String) async throws -> PlaylistItemsModel
 }
 
 class HomeProvider : HomeProviderProtocol{
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel {
-        var queryParams: [String:String] = ["part":"snippet"]
+        var queryParams: [String:String] = ["part":"snippet", "type": "video"]
         
         if !channelId.isEmpty {
             queryParams["channelId"] = channelId
@@ -48,14 +48,17 @@ class HomeProvider : HomeProviderProtocol{
             throw error
         }
     }
+    
+    
 
-    func getPlaylists(channelId: String) async throws -> PlayList {
+
+    func getPlaylists(channelId: String) async throws -> PlayListModel {
         let queryParams: [String:String] = ["part":"snippet,contentDetails", "channelId" : channelId]
 
         let requestModel = RequestModel(endpoint: .playlist, queryItems: queryParams)
         
         do {
-            let model = try await ServiceLayer.callService(requestModel, PlayList.self)
+            let model = try await ServiceLayer.callService(requestModel, PlayListModel.self)
             return model
         }catch {
              print(error)

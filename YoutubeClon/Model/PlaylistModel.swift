@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PlayList: Decodable {
+struct PlayListModel: Decodable {
     let kind, etag: String
     let pageInfo: PageInfo
     let items: [Items]
