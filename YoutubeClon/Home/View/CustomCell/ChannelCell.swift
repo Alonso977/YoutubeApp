@@ -28,8 +28,8 @@ class ChannelCell: UITableViewCell {
     
     private func configureView() {
         selectionStyle = .none
-        bellImage.image = UIImage(named: "bell")?.withRenderingMode(.alwaysTemplate)
-        bellImage.tintColor = UIColor(named: "grayColor")
+        bellImage.image = .bellImage
+        bellImage.tintColor = .grayColor
         // redondeando la imagen
         profileImage.layer.cornerRadius = 51/2
     }

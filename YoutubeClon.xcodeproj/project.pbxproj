@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B6DC39EAD0664657E9E55A18 /* Pods_YoutubeClon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D095B4B64233C15F87E238 /* Pods_YoutubeClon.framework */; };
+		F81D8A252946433500649921 /* PlayVideoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D8A242946433500649921 /* PlayVideoProvider.swift */; };
+		F81D8A27294D423B00649921 /* PlayVideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D8A26294D423B00649921 /* PlayVideoPresenter.swift */; };
+		F81D8A2C294D545500649921 /* VideoHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D8A2A294D545500649921 /* VideoHeaderCell.swift */; };
+		F81D8A2D294D545500649921 /* VideoHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81D8A2B294D545500649921 /* VideoHeaderCell.xib */; };
+		F81D8A30294D547D00649921 /* VideoFullWithCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D8A2E294D547D00649921 /* VideoFullWithCell.swift */; };
+		F81D8A31294D547D00649921 /* VideoFullWithCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F81D8A2F294D547D00649921 /* VideoFullWithCell.xib */; };
 		F8FD1A022923DDCE0039815C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A012923DDCE0039815C /* AppDelegate.swift */; };
 		F8FD1A042923DDCE0039815C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A032923DDCE0039815C /* SceneDelegate.swift */; };
 		F8FD1A062923DDCE0039815C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A052923DDCE0039815C /* ViewController.swift */; };
@@ -57,12 +63,32 @@
 		F8FD1A822933B4990039815C /* VideosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A812933B4990039815C /* VideosPresenter.swift */; };
 		F8FD1A842933B4A70039815C /* VideosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A832933B4A70039815C /* VideosProvider.swift */; };
 		F8FD1A862933B80D0039815C /* VideosProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A852933B80D0039815C /* VideosProviderMock.swift */; };
+		F8FD1A8B2935428E0039815C /* PlayListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A8A2935428E0039815C /* PlayListProvider.swift */; };
+		F8FD1A8D293542A90039815C /* PlayListProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A8C293542A90039815C /* PlayListProviderMock.swift */; };
+		F8FD1A9229356C110039815C /* PlaylistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A9129356C110039815C /* PlaylistPresenter.swift */; };
+		F8FD1A97293981FA0039815C /* AboutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A96293981FA0039815C /* AboutProvider.swift */; };
+		F8FD1A99293985C10039815C /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A98293985C10039815C /* AboutPresenter.swift */; };
+		F8FD1A9B293A7F630039815C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A9A293A7F630039815C /* UITableView+Extension.swift */; };
+		F8FD1A9D293A893A0039815C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A9C293A893A0039815C /* UIColor+Extension.swift */; };
+		F8FD1A9F293A8DFF0039815C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1A9E293A8DFF0039815C /* UIImage+Extension.swift */; };
+		F8FD1AA1293AD7E90039815C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1AA0293AD7E80039815C /* BaseViewController.swift */; };
+		F8FD1AA4293E4CBD0039815C /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1AA3293E4CBD0039815C /* TabsView.swift */; };
+		F8FD1AA8293E4FF40039815C /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1AA6293E4FF40039815C /* OptionCell.swift */; };
+		F8FD1AA9293E4FF40039815C /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FD1AA7293E4FF40039815C /* OptionCell.xib */; };
+		F8FD1AAD2940278C0039815C /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD1AAB2940278C0039815C /* PlayVideoViewController.swift */; };
+		F8FD1AAE2940278C0039815C /* PlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FD1AAC2940278C0039815C /* PlayVideoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01D095B4B64233C15F87E238 /* Pods_YoutubeClon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeClon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23917644FE3DF79DE0161C71 /* Pods-YoutubeClon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeClon.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeClon/Pods-YoutubeClon.debug.xcconfig"; sourceTree = "<group>"; };
 		2F2CB97E37CF9830A1A1972A /* Pods-YoutubeClon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeClon.release.xcconfig"; path = "Target Support Files/Pods-YoutubeClon/Pods-YoutubeClon.release.xcconfig"; sourceTree = "<group>"; };
+		F81D8A242946433500649921 /* PlayVideoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoProvider.swift; sourceTree = "<group>"; };
+		F81D8A26294D423B00649921 /* PlayVideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoPresenter.swift; sourceTree = "<group>"; };
+		F81D8A2A294D545500649921 /* VideoHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHeaderCell.swift; sourceTree = "<group>"; };
+		F81D8A2B294D545500649921 /* VideoHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoHeaderCell.xib; sourceTree = "<group>"; };
+		F81D8A2E294D547D00649921 /* VideoFullWithCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFullWithCell.swift; sourceTree = "<group>"; };
+		F81D8A2F294D547D00649921 /* VideoFullWithCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoFullWithCell.xib; sourceTree = "<group>"; };
 		F8FD19FE2923DDCE0039815C /* YoutubeClon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FD1A012923DDCE0039815C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FD1A032923DDCE0039815C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +141,20 @@
 		F8FD1A832933B4A70039815C /* VideosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProvider.swift; sourceTree = "<group>"; };
 		F8FD1A852933B80D0039815C /* VideosProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProviderMock.swift; sourceTree = "<group>"; };
 		F8FD1A872933BD490039815C /* VideoList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoList.json; sourceTree = "<group>"; };
+		F8FD1A8A2935428E0039815C /* PlayListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListProvider.swift; sourceTree = "<group>"; };
+		F8FD1A8C293542A90039815C /* PlayListProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListProviderMock.swift; sourceTree = "<group>"; };
+		F8FD1A9129356C110039815C /* PlaylistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistPresenter.swift; sourceTree = "<group>"; };
+		F8FD1A96293981FA0039815C /* AboutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProvider.swift; sourceTree = "<group>"; };
+		F8FD1A98293985C10039815C /* AboutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+		F8FD1A9A293A7F630039815C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		F8FD1A9C293A893A0039815C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F8FD1A9E293A8DFF0039815C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F8FD1AA0293AD7E80039815C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F8FD1AA3293E4CBD0039815C /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		F8FD1AA6293E4FF40039815C /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		F8FD1AA7293E4FF40039815C /* OptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
+		F8FD1AAB2940278C0039815C /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
+		F8FD1AAC2940278C0039815C /* PlayVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayVideoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +175,17 @@
 				01D095B4B64233C15F87E238 /* Pods_YoutubeClon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F81D8A29294D53D500649921 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F81D8A2E294D547D00649921 /* VideoFullWithCell.swift */,
+				F81D8A2F294D547D00649921 /* VideoFullWithCell.xib */,
+				F81D8A2A294D545500649921 /* VideoHeaderCell.swift */,
+				F81D8A2B294D545500649921 /* VideoHeaderCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		F8FD19F52923DDCE0039815C = {
@@ -166,6 +217,7 @@
 				F8FD1A222925AF440039815C /* Videos */,
 				F8FD1A212925AEF20039815C /* Home */,
 				F8FD1A1A29246E880039815C /* Main */,
+				F8FD1AAA2940275D0039815C /* PlayVideo */,
 				F8FD1A152923F86C0039815C /* Model */,
 				F8FD1A012923DDCE0039815C /* AppDelegate.swift */,
 				F8FD1A032923DDCE0039815C /* SceneDelegate.swift */,
@@ -192,6 +244,7 @@
 		F8FD1A1A29246E880039815C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F8FD1AA2293E4CA50039815C /* TabsView */,
 				F8FD1A1B29246EBF0039815C /* RootPageViewController.swift */,
 				F8FD1A1F292470070039815C /* MainViewController.swift */,
 			);
@@ -222,6 +275,8 @@
 		F8FD1A232925AF4A0039815C /* PlayLists */ = {
 			isa = PBXGroup;
 			children = (
+				F8FD1A8E29356BBE0039815C /* Presenter */,
+				F8FD1A88293542640039815C /* Model */,
 				F8FD1A302925AFBF0039815C /* PlaylistsViewController.swift */,
 				F8FD1A312925AFBF0039815C /* PlaylistsViewController.xib */,
 			);
@@ -240,6 +295,8 @@
 		F8FD1A252925AF6B0039815C /* About */ = {
 			isa = PBXGroup;
 			children = (
+				F8FD1A93293981B00039815C /* Presenter */,
+				F8FD1A94293981B90039815C /* Model */,
 				F8FD1A382925AFE30039815C /* AboutViewController.swift */,
 				F8FD1A392925AFE30039815C /* AboutViewController.xib */,
 			);
@@ -264,6 +321,7 @@
 				F8FD1A4429297CA60039815C /* Constants.swift */,
 				F8FD1A57292D9A020039815C /* Utils.swift */,
 				F8FD1A65292DA2A60039815C /* MockManager.swift */,
+				F8FD1AA0293AD7E80039815C /* BaseViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -344,6 +402,9 @@
 			isa = PBXGroup;
 			children = (
 				F8FD1A7C29319A1E0039815C /* UIView+Extension.swift */,
+				F8FD1A9A293A7F630039815C /* UITableView+Extension.swift */,
+				F8FD1A9C293A893A0039815C /* UIColor+Extension.swift */,
+				F8FD1A9E293A8DFF0039815C /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,6 +432,117 @@
 				F8FD1A852933B80D0039815C /* VideosProviderMock.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		F8FD1A88293542640039815C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1A892935426D0039815C /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8FD1A892935426D0039815C /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1A8A2935428E0039815C /* PlayListProvider.swift */,
+				F8FD1A8C293542A90039815C /* PlayListProviderMock.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F8FD1A8E29356BBE0039815C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1A9129356C110039815C /* PlaylistPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8FD1A93293981B00039815C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1A98293985C10039815C /* AboutPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8FD1A94293981B90039815C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1A95293981CF0039815C /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8FD1A95293981CF0039815C /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1A96293981FA0039815C /* AboutProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F8FD1AA2293E4CA50039815C /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1AA5293E4FAA0039815C /* Cell */,
+				F8FD1AA3293E4CBD0039815C /* TabsView.swift */,
+			);
+			path = TabsView;
+			sourceTree = "<group>";
+		};
+		F8FD1AA5293E4FAA0039815C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1AA6293E4FF40039815C /* OptionCell.swift */,
+				F8FD1AA7293E4FF40039815C /* OptionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F8FD1AAA2940275D0039815C /* PlayVideo */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1AB22943CE050039815C /* Model */,
+				F8FD1AAF2943CDE40039815C /* View */,
+				F8FD1AAB2940278C0039815C /* PlayVideoViewController.swift */,
+				F8FD1AAC2940278C0039815C /* PlayVideoViewController.xib */,
+			);
+			path = PlayVideo;
+			sourceTree = "<group>";
+		};
+		F8FD1AAF2943CDE40039815C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F81D8A29294D53D500649921 /* Cells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F8FD1AB02943CDF20039815C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F81D8A26294D423B00649921 /* PlayVideoPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		F8FD1AB12943CDFC0039815C /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F81D8A242946433500649921 /* PlayVideoProvider.swift */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		F8FD1AB22943CE050039815C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD1AB02943CDF20039815C /* Presenter */,
+				F8FD1AB12943CDFC0039815C /* Provider */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		FD4648CC644F922C30FBC632 /* Pods */ = {
@@ -444,12 +616,16 @@
 			files = (
 				F8FD1A6F292DB3670039815C /* VideoCell.xib in Resources */,
 				F8FD1A332925AFBF0039815C /* PlaylistsViewController.xib in Resources */,
+				F8FD1AAE2940278C0039815C /* PlayVideoViewController.xib in Resources */,
 				F8FD1A60292D9CBD0039815C /* SearchVideos.json in Resources */,
 				F8FD1A73292DB3940039815C /* PlaylistCell.xib in Resources */,
 				F8FD1A5A292D9C4B0039815C /* Channel.json in Resources */,
 				F8FD1A62292D9D970039815C /* Playlists.json in Resources */,
 				F8FD1A0E2923DDD40039815C /* LaunchScreen.storyboard in Resources */,
+				F81D8A2D294D545500649921 /* VideoHeaderCell.xib in Resources */,
+				F81D8A31294D547D00649921 /* VideoFullWithCell.xib in Resources */,
 				F8FD1A5E292D9C9B0039815C /* PlaylistItems.json in Resources */,
+				F8FD1AA9293E4FF40039815C /* OptionCell.xib in Resources */,
 				F8FD1A64292D9E160039815C /* VideoOnlyOne.json in Resources */,
 				F8FD1A3B2925AFE30039815C /* AboutViewController.xib in Resources */,
 				F8FD1A7A29318C670039815C /* BottonSheetViewController.xib in Resources */,
@@ -511,36 +687,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FD1A8B2935428E0039815C /* PlayListProvider.swift in Sources */,
 				F8FD1A822933B4990039815C /* VideosPresenter.swift in Sources */,
 				F8FD1A322925AFBF0039815C /* PlaylistsViewController.swift in Sources */,
 				F8FD1A7D29319A1E0039815C /* UIView+Extension.swift in Sources */,
 				F8FD1A4029297C010039815C /* NetworkError.swift in Sources */,
+				F81D8A2C294D545500649921 /* VideoHeaderCell.swift in Sources */,
 				F8FD1A2E2925AFAE0039815C /* VideosViewController.swift in Sources */,
 				F8FD1A20292470070039815C /* MainViewController.swift in Sources */,
 				F8FD1A53292A7D400039815C /* PlaylistItemsModel.swift in Sources */,
 				F8FD1A6E292DB3670039815C /* VideoCell.swift in Sources */,
+				F8FD1AA1293AD7E90039815C /* BaseViewController.swift in Sources */,
 				F8FD1A062923DDCE0039815C /* ViewController.swift in Sources */,
 				F8FD1A55292D94980039815C /* HomeProviderMock.swift in Sources */,
+				F8FD1AAD2940278C0039815C /* PlayVideoViewController.swift in Sources */,
 				F8FD1A58292D9A020039815C /* Utils.swift in Sources */,
 				F8FD1A4229297C500039815C /* RequestModel.swift in Sources */,
 				F8FD1A3E29297B7B0039815C /* ServiceLayer.swift in Sources */,
 				F8FD1A842933B4A70039815C /* VideosProvider.swift in Sources */,
+				F8FD1A9229356C110039815C /* PlaylistPresenter.swift in Sources */,
+				F8FD1A97293981FA0039815C /* AboutProvider.swift in Sources */,
 				F8FD1A72292DB3940039815C /* PlaylistCell.swift in Sources */,
 				F8FD1A51292A79D00039815C /* ChannelModel.swift in Sources */,
 				F8FD1A66292DA2A60039815C /* MockManager.swift in Sources */,
+				F8FD1A99293985C10039815C /* AboutPresenter.swift in Sources */,
+				F8FD1A9B293A7F630039815C /* UITableView+Extension.swift in Sources */,
 				F8FD1A4529297CA60039815C /* Constants.swift in Sources */,
 				F8FD1A862933B80D0039815C /* VideosProviderMock.swift in Sources */,
 				F8FD1A6A292DB3460039815C /* ChannelCell.swift in Sources */,
 				F8FD1A172923F8950039815C /* PlaylistModel.swift in Sources */,
 				F8FD1A282925AF8B0039815C /* HomeViewController.swift in Sources */,
+				F8FD1A9F293A8DFF0039815C /* UIImage+Extension.swift in Sources */,
 				F8FD1A3A2925AFE30039815C /* AboutViewController.swift in Sources */,
+				F8FD1A8D293542A90039815C /* PlayListProviderMock.swift in Sources */,
 				F8FD1A022923DDCE0039815C /* AppDelegate.swift in Sources */,
 				F8FD1A362925AFD00039815C /* ChannelViewController.swift in Sources */,
 				F8FD1A1C29246EBF0039815C /* RootPageViewController.swift in Sources */,
 				F8FD1A4B29298EF10039815C /* HomeProvider.swift in Sources */,
 				F8FD1A7529314B5D0039815C /* SectionTitleView.swift in Sources */,
+				F8FD1AA4293E4CBD0039815C /* TabsView.swift in Sources */,
+				F8FD1AA8293E4FF40039815C /* OptionCell.swift in Sources */,
+				F81D8A30294D547D00649921 /* VideoFullWithCell.swift in Sources */,
 				F8FD1A7929318C670039815C /* BottonSheetViewController.swift in Sources */,
+				F81D8A252946433500649921 /* PlayVideoProvider.swift in Sources */,
 				F8FD1A4D2929917E0039815C /* HomePresenter.swift in Sources */,
+				F81D8A27294D423B00649921 /* PlayVideoPresenter.swift in Sources */,
+				F8FD1A9D293A893A0039815C /* UIColor+Extension.swift in Sources */,
 				F8FD1A19292401BF0039815C /* VideoModel.swift in Sources */,
 				F8FD1A042923DDCE0039815C /* SceneDelegate.swift in Sources */,
 			);
@@ -696,7 +888,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -726,7 +918,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

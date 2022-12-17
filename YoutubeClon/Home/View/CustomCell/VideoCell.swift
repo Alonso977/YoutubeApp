@@ -27,6 +27,7 @@ class VideoCell: UITableViewCell {
     
     private func configView() {
         selectionStyle = .none
+        videoImage.layer.cornerRadius = 6
     }
     
     @IBAction func dotsButtonTapped(_ sender: Any) {
@@ -36,8 +37,8 @@ class VideoCell: UITableViewCell {
     }
     func configCell(model: Any) {
         
-        dotsImage.image = UIImage(named: "dots")?.withRenderingMode(.alwaysTemplate)
-        dotsImage.tintColor = UIColor(named: "grayColor")
+        dotsImage.image = .dotsImage
+        dotsImage.tintColor = .grayColor
         
         if let video = model as? VideoModel.Item {
             if let imageUrl = video.snippet?.thumbnails.medium?.url, let url = URL(string: imageUrl){

@@ -25,9 +25,12 @@ class VideosViewController: UIViewController {
     
     // Alonso: - Configuramos el tableview
     func configTableView() {
-        // Alonso: - Registramos la celda
-        let nibVideos = UINib(nibName: "\(VideoCell.self)", bundle: nil)
-        tableViewVideos.register(nibVideos, forCellReuseIdentifier: "\(VideoCell.self)")
+//        // Alonso: - Registramos la celda
+//        let nibVideos = UINib(nibName: "\(VideoCell.self)", bundle: nil)
+//        tableViewVideos.register(nibVideos, forCellReuseIdentifier: "\(VideoCell.self)")
+        
+        //USANDO LA EXTENSION QUE CREE PARA TABLEVIEW PUEDO REEMPLAZAR LAS DOS LINEAS DE ARRIBA SOLO CON LA SIGUIENTE
+        tableViewVideos.register(cell: VideoCell.self)
         
         tableViewVideos.separatorColor = .clear
         tableViewVideos.delegate = self
@@ -43,9 +46,12 @@ extension VideosViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let video = videoList[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else{
-            return UITableViewCell()
-        }
+        
+        //USANDO LA EXTENSION QUE CREE PARA TABLEVIEW PUEDO REEMPLAZAR LAS DOS LINEAS DE ARRIBA SOLO CON LA SIGUIENTE
+        let cell = tableView.dequeueReusableCell(for: VideoCell.self, for: indexPath)
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else{
+//            return UITableViewCell()
+//        }
         cell.didTapDostsButton = {[weak self] in
             self?.configButtonSheet()
         }

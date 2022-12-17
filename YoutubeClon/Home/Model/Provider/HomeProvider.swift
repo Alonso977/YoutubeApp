@@ -49,9 +49,6 @@ class HomeProvider : HomeProviderProtocol{
         }
     }
     
-    
-
-
     func getPlaylists(channelId: String) async throws -> PlayListModel {
         let queryParams: [String:String] = ["part":"snippet,contentDetails", "channelId" : channelId]
 

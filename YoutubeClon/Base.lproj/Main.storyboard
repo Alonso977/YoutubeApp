@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oMW-QR-fAo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,25 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFG-En-BFm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="133" width="414" height="729"/>
                                 <connections>
                                     <segue destination="S4j-q1-vjx" kind="embed" id="4ax-MR-ZYd"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHR-0J-8hb" customClass="TabsView" customModule="YoutubeClon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="45"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ypz-zq-Fqx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fFG-En-BFm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nvk-39-21g"/>
+                            <constraint firstItem="jHR-0J-8hb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B4t-aV-rVf"/>
+                            <constraint firstItem="fFG-En-BFm" firstAttribute="top" secondItem="jHR-0J-8hb" secondAttribute="bottom" id="Mmq-GT-Ias"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fFG-En-BFm" secondAttribute="bottom" id="XwJ-Wg-PxZ"/>
                             <constraint firstItem="fFG-En-BFm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cIe-KD-bPA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jHR-0J-8hb" secondAttribute="trailing" id="gfm-pg-GfR"/>
+                            <constraint firstItem="jHR-0J-8hb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="idG-xP-qJU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFG-En-BFm" secondAttribute="trailing" id="nCG-TR-CbT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xC9-TE-om0"/>
+                    <connections>
+                        <outlet property="tabsView" destination="jHR-0J-8hb" id="XjR-tP-kaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="98"/>
+            <point key="canvasLocation" x="944.92753623188412" y="97.767857142857139"/>
         </scene>
         <!--Root Page View Controller-->
         <scene sceneID="f0P-bk-0V4">
@@ -43,7 +57,25 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="S4j-q1-vjx" customClass="RootPageViewController" customModule="YoutubeClon" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKR-RH-KZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="98"/>
+            <point key="canvasLocation" x="1660.8695652173915" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QmO-Id-FUN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oMW-QR-fAo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Uf-0c-Vwo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ifn-sL-Pff"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIx-TV-SxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
